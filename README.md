@@ -6,22 +6,15 @@ This is where I put my **FRA222** submissions.
 
 
 ## Table of Contents <!-- omit in toc -->
----
 - [Week 1](#week-1)
 - [Week 2](#week-2)
  
 
-<br/>
-
 ## Week 1
----
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 
-<!-- <br/> -->
-
 ## Week 2
----
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 <!-- EOF -->
