@@ -4,6 +4,9 @@
 
 This is where I put my **FRA222** submissions.
 
+![GitHub Repo stars](https://img.shields.io/github/stars/Nopparuj-an/FRA222-Microcontroller-Interface?style=flat)
+![GitHub watchers](https://img.shields.io/github/watchers/Nopparuj-an/FRA222-Microcontroller-Interface)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Nopparuj-an/FRA222-Microcontroller-Interface)
 
 ## Table of Contents <!-- omit in toc -->
 - [Week 1](#week-1)
