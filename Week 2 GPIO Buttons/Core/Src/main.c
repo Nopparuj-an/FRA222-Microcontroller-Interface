@@ -117,6 +117,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  uint8_t Test[] = "Hello World !!!\r\n"; //Data to send
+	  HAL_UART_Transmit(&huart2,Test,sizeof(Test),10);// Sending in normal mode
   }
   /* USER CODE END 3 */
 }
