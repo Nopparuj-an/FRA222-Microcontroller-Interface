@@ -108,9 +108,9 @@ int main(void) {
 	/* USER CODE BEGIN WHILE */
 	while (1) {
 		ADC_Read();
-//		char Tx[10];
-//		sprintf(Tx, "%d\r\n", ADCConvert.Data[0]);
-//		HAL_UART_Transmit(&huart2, (uint64_t*) Tx, strlen(Tx), HAL_MAX_DELAY);
+		char Tx[10];
+		sprintf(Tx, "%d\r\n", ADCConvert[0].Data);
+		HAL_UART_Transmit(&huart2, Tx, strlen(Tx), HAL_MAX_DELAY);
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
