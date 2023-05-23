@@ -320,8 +320,8 @@ void WriteGPIOB() {
 	if (HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_2)) {
 		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, GPIO_PIN_RESET); // CS select
 		SPITx[0] = 0b01000000;
-		SPITx[1] = 0x13;
-		SPITx[2] = 0b10101010;
+		SPITx[1] = 0x15;
+		SPITx[2] = 0b00000011;
 		HAL_SPI_Transmit_IT(&hspi3, SPITx, 3);
 	}
 }

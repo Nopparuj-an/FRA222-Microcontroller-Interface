@@ -1046,13 +1046,13 @@ void WriteGPIOB() {
  8000908:	4b08      	ldr	r3, [pc, #32]	; (800092c <WriteGPIOB+0x40>)
  800090a:	2240      	movs	r2, #64	; 0x40
  800090c:	701a      	strb	r2, [r3, #0]
-		SPITx[1] = 0x13;
+		SPITx[1] = 0x15;
  800090e:	4b07      	ldr	r3, [pc, #28]	; (800092c <WriteGPIOB+0x40>)
- 8000910:	2213      	movs	r2, #19
+ 8000910:	2215      	movs	r2, #21
  8000912:	705a      	strb	r2, [r3, #1]
-		SPITx[2] = 0b10101010;
+		SPITx[2] = 0b00000011;
  8000914:	4b05      	ldr	r3, [pc, #20]	; (800092c <WriteGPIOB+0x40>)
- 8000916:	22aa      	movs	r2, #170	; 0xaa
+ 8000916:	2203      	movs	r2, #3
  8000918:	709a      	strb	r2, [r3, #2]
 		HAL_SPI_Transmit_IT(&hspi3, SPITx, 3);
  800091a:	2203      	movs	r2, #3
