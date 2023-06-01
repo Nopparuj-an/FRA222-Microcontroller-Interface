@@ -1,0 +1,10 @@
+10:14:51 **** Incremental Build of configuration Debug for project Week 3 Analog ****
+make -j16 all 
+arm-none-eabi-size   Week\ 3\ Analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13344	    120	   1792	  15256	   3b98	Week 3 Analog.elf
+Finished building: default.size.stdout
+ 
+
+10:14:52 Build Finished. 0 errors, 0 warnings. (took 702ms)
+

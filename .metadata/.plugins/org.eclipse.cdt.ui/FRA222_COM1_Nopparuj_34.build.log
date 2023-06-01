@@ -1,0 +1,10 @@
+23:58:37 **** Incremental Build of configuration Debug for project FRA222_COM1_Nopparuj_34 ****
+make -j16 all 
+arm-none-eabi-size   FRA222_COM1_Nopparuj_34.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17068	    172	   2156	  19396	   4bc4	FRA222_COM1_Nopparuj_34.elf
+Finished building: default.size.stdout
+ 
+
+23:58:37 Build Finished. 0 errors, 0 warnings. (took 658ms)
+

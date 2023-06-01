@@ -1,0 +1,17 @@
+15:07:59 **** Incremental Build of configuration Debug for project COMP3_2023_34 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "COMP3_2023_34.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ST\FRA222-Microcontroller-Interface\LAB\COMP3_2023_34\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="COMP3_2023_34.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: COMP3_2023_34.elf
+ 
+arm-none-eabi-size   COMP3_2023_34.elf 
+arm-none-eabi-objdump -h -S  COMP3_2023_34.elf  > "COMP3_2023_34.list"
+   text	   data	    bss	    dec	    hex	filename
+  48900	    488	   2296	  51684	   c9e4	COMP3_2023_34.elf
+Finished building: default.size.stdout
+ 
+Finished building: COMP3_2023_34.list
+ 
+
+15:08:01 Build Finished. 0 errors, 0 warnings. (took 1s.596ms)
+

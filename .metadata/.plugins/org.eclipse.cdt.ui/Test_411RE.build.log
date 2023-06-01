@@ -1,0 +1,10 @@
+19:22:59 **** Incremental Build of configuration Debug for project Test_411RE ****
+make -j16 all 
+arm-none-eabi-size   Test_411RE.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7648	     20	   1636	   9304	   2458	Test_411RE.elf
+Finished building: default.size.stdout
+ 
+
+19:22:59 Build Finished. 0 errors, 0 warnings. (took 684ms)
+

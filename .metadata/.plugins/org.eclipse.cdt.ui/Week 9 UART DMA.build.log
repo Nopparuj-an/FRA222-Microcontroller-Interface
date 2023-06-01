@@ -1,0 +1,10 @@
+19:22:56 **** Incremental Build of configuration Debug for project Week 9 UART DMA ****
+make -j16 all 
+arm-none-eabi-size   Week\ 9\ UART\ DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16540	    120	   1912	  18572	   488c	Week 9 UART DMA.elf
+Finished building: default.size.stdout
+ 
+
+19:22:57 Build Finished. 0 errors, 0 warnings. (took 671ms)
+

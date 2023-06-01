@@ -1,0 +1,17 @@
+23:05:38 **** Incremental Build of configuration Debug for project Week 12 SPI IO Expander ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Week 12 SPI IO Expander.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ST\FRA222-Microcontroller-Interface\Week 12 SPI IO Expander\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Week 12 SPI IO Expander.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Week 12 SPI IO Expander.elf
+ 
+arm-none-eabi-size   Week\ 12\ SPI\ IO\ Expander.elf 
+arm-none-eabi-objdump -h -S  Week\ 12\ SPI\ IO\ Expander.elf  > "Week 12 SPI IO Expander.list"
+   text	   data	    bss	    dec	    hex	filename
+  11560	     20	   1756	  13336	   3418	Week 12 SPI IO Expander.elf
+Finished building: default.size.stdout
+ 
+Finished building: Week 12 SPI IO Expander.list
+ 
+
+23:05:39 Build Finished. 0 errors, 0 warnings. (took 1s.340ms)
+

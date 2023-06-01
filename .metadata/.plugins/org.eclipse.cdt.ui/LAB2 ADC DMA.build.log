@@ -1,0 +1,10 @@
+23:53:36 **** Build of configuration Debug for project LAB2 ADC DMA ****
+make -j16 all 
+arm-none-eabi-size   LAB2\ ADC\ DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17940	    120	   1880	  19940	   4de4	LAB2 ADC DMA.elf
+Finished building: default.size.stdout
+ 
+
+23:53:37 Build Finished. 0 errors, 0 warnings. (took 645ms)
+

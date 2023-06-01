@@ -1,0 +1,10 @@
+12:09:49 **** Incremental Build of configuration Debug for project Week 2 GPIO Buttons ****
+make -j16 all 
+arm-none-eabi-size   Week\ 2\ GPIO\ Buttons.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8508	     20	   1644	  10172	   27bc	Week 2 GPIO Buttons.elf
+Finished building: default.size.stdout
+ 
+
+12:09:50 Build Finished. 0 errors, 0 warnings. (took 817ms)
+

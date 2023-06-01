@@ -1,0 +1,10 @@
+23:54:30 **** Build of configuration Debug for project Week 4 EXTI DMA ADC ****
+make -j16 all 
+arm-none-eabi-size   Week\ 4\ EXTI\ DMA\ ADC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12824	     20	   1844	  14688	   3960	Week 4 EXTI DMA ADC.elf
+Finished building: default.size.stdout
+ 
+
+23:54:30 Build Finished. 0 errors, 0 warnings. (took 646ms)
+

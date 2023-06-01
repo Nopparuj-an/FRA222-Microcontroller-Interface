@@ -1,0 +1,10 @@
+19:15:29 **** Incremental Build of configuration Debug for project Week 6 Output Compare ****
+make -j16 all 
+arm-none-eabi-size   Week\ 6\ Output\ Compare.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11700	     24	   1712	  13436	   347c	Week 6 Output Compare.elf
+Finished building: default.size.stdout
+ 
+
+19:15:30 Build Finished. 0 errors, 0 warnings. (took 653ms)
+

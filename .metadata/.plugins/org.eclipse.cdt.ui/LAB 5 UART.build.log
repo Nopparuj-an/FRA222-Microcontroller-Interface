@@ -1,0 +1,10 @@
+14:40:29 **** Incremental Build of configuration Debug for project LAB 5 UART ****
+make -j16 all 
+arm-none-eabi-size   LAB\ 5\ UART.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15148	    128	   1712	  16988	   425c	LAB 5 UART.elf
+Finished building: default.size.stdout
+ 
+
+14:40:30 Build Finished. 0 errors, 0 warnings. (took 675ms)
+

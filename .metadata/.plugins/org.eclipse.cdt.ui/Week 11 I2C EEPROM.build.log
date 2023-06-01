@@ -1,0 +1,10 @@
+14:24:53 **** Build of configuration Debug for project Week 11 I2C EEPROM ****
+make -j16 all 
+arm-none-eabi-size   Week\ 11\ I2C\ EEPROM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18096	     24	   1920	  20040	   4e48	Week 11 I2C EEPROM.elf
+Finished building: default.size.stdout
+ 
+
+14:24:54 Build Finished. 0 errors, 0 warnings. (took 671ms)
+

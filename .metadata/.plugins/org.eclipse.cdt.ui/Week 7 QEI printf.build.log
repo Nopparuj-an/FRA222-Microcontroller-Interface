@@ -1,0 +1,10 @@
+21:25:52 **** Incremental Build of configuration Debug for project Week 7 QEI printf ****
+make -j16 all 
+arm-none-eabi-size   Week\ 7\ QEI\ printf.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18880	    120	   1864	  20864	   5180	Week 7 QEI printf.elf
+Finished building: default.size.stdout
+ 
+
+21:25:53 Build Finished. 0 errors, 0 warnings. (took 750ms)
+

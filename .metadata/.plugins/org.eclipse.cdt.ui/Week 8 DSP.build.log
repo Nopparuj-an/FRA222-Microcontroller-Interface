@@ -1,0 +1,10 @@
+12:54:29 **** Build of configuration Debug for project Week 8 DSP ****
+make -j16 all 
+arm-none-eabi-size   Week\ 8\ DSP.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9804	     20	   1700	  11524	   2d04	Week 8 DSP.elf
+Finished building: default.size.stdout
+ 
+
+12:54:29 Build Finished. 0 errors, 0 warnings. (took 681ms)
+

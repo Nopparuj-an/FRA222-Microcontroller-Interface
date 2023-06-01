@@ -1,0 +1,10 @@
+19:23:44 **** Build of configuration Debug for project LAB4 Motor PID ****
+make -j16 all 
+arm-none-eabi-size   LAB4\ Motor\ PID.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17048	     20	   1916	  18984	   4a28	LAB4 Motor PID.elf
+Finished building: default.size.stdout
+ 
+
+19:23:45 Build Finished. 0 errors, 0 warnings. (took 636ms)
+

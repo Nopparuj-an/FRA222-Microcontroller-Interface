@@ -1,0 +1,10 @@
+11:59:30 **** Incremental Build of configuration Debug for project Week 5 Timer ****
+make -j16 all 
+arm-none-eabi-size   Week\ 5\ Timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14724	     20	   1972	  16716	   414c	Week 5 Timer.elf
+Finished building: default.size.stdout
+ 
+
+11:59:31 Build Finished. 0 errors, 0 warnings. (took 642ms)
+
