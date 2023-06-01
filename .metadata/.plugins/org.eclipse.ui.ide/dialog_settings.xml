@@ -9,6 +9,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\ST\FRA222-Microcontroller-Interface"/>
 			<item value="C:\Users\LENOVO\Downloads\BasicModBus"/>
 			<item value="C:\ST\FRA222-Microcontroller-Interface\LAB\FRA222_COM2_Nopparuj_34"/>
 			<item value="C:\ST\FRA222-Microcontroller-Interface\Week 7 QEI printf"/>
