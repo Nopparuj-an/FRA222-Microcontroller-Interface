@@ -1,0 +1,38 @@
+#ifndef INC_RGB_H_
+#define INC_RGB_H_
+
+// PRIVATE INCLUDE ================================================================================
+
+#include <WS2812B.h>
+
+// USER CODE ======================================================================================
+
+void RGB_Rainbow(void) {
+	static uint32_t previousTime = 0;
+	static uint8_t hue = 0;
+
+	uint32_t currentTime = HAL_GetTick();
+	uint32_t elapsedTime = currentTime - previousTime;
+
+	// Change hue every 100 milliseconds
+	if (elapsedTime >= 100) {
+		previousTime = currentTime;
+
+		// Update hue
+		hue++;
+		if (hue > 255) {
+			hue = 0;
+		}
+
+		// Set LED colors based on hue
+		for (int i = 0; i < MAX_LED; i++) {
+			uint8_t color = (hue + (i * (255 / MAX_LED))) % 255;
+			Set_LED(i, color, 255 - color, 0);
+		}
+
+		// Send LED data to update colors
+		WS2812_Send();
+	}
+}
+
+#endif /* INC_RGB_H_ */

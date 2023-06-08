@@ -1,0 +1,14 @@
+#ifndef INC_RGB_H_
+#define INC_RGB_H_
+
+// PRIVATE INCLUDE ================================================================================
+
+
+// PRIVATE FUNCTION PROTOTYPE =====================================================================
+
+void RGB_Rainbow();
+void RGB_Power_Status();
+void RGB_logic(MachineState state, uint8_t point);
+void RGB_Bootup();
+
+#endif /* INC_RGB_H_ */

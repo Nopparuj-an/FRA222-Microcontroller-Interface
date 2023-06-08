@@ -1,0 +1,13 @@
+/*
+ * BaseSystemModbus.h
+ *
+ *  Created on: 1 มิ.ย. 2566
+ *      Author: LENOVO
+ */
+
+#ifndef INC_BASESYSTEMMODBUS_H_
+#define INC_BASESYSTEMMODBUS_H_
+
+
+
+#endif /* INC_BASESYSTEMMODBUS_H_ */
