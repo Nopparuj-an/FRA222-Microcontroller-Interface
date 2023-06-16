@@ -22,3 +22,7 @@ place
 tray_wait_mode
 tray_point_n
 jog_point_n
+QEIReadHome * 0.03
+LastPos_x
+LastPos_y
+emergency

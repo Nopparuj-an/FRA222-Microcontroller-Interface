@@ -1,0 +1,66 @@
+#ifndef INC_GY_906_H_
+#define INC_GY_906_H_
+
+// PRIVATE INCLUDE ================================================================================
+
+#include "i2c.h"
+
+// PRIVATE DEFINE =================================================================================
+
+#define GY906_BCC_ADDR 0x5A
+
+// PRIVATE VARIABLES ==============================================================================
+
+// PRIVATE FUNCTION PROTOTYPE =====================================================================
+
+float GY906_BCC_ReadObjectTemperature(void);
+
+// FUNCTIONS ======================================================================================
+
+float GY906_BCC_ReadObjectTemperature(void) {
+	uint8_t data[3];  // Array to store temperature data
+
+	// Send command to request object temperature
+	data[0] = 0x07;  // Register address of object temperature high byte
+	if (HAL_I2C_Master_Transmit(&hi2c1, GY906_BCC_ADDR, data, 1, HAL_MAX_DELAY) != HAL_OK) {
+		// Handle error
+		return 0;
+	}
+
+	// Receive object temperature data
+	if (HAL_I2C_Master_Receive(&hi2c1, GY906_BCC_ADDR, data, 3, HAL_MAX_DELAY) != HAL_OK) {
+		// Handle error
+		return 0;
+	}
+
+	// Convert temperature data to floating-point value
+	int16_t tempRaw = (data[1] << 8) | data[0];
+	float tempObject = tempRaw * 0.02 - 273.15;  // Assuming Celsius temperature scale
+
+	return tempObject;
+}
+
+float GY906_BCC_ReadAmbientTemperature(void) {
+	uint8_t data[3];  // Array to store temperature data
+
+	// Send command to request ambient temperature
+	data[0] = 0x06;  // Register address of ambient temperature high byte
+	if (HAL_I2C_Master_Transmit(&hi2c1, GY906_BCC_ADDR, data, 1, HAL_MAX_DELAY) != HAL_OK) {
+		// Handle error
+//		return 0;
+	}
+
+	// Receive ambient temperature data
+	if (HAL_I2C_Master_Receive(&hi2c1, GY906_BCC_ADDR, data, 3, HAL_MAX_DELAY) != HAL_OK) {
+		// Handle error
+//		return 0;
+	}
+
+	// Convert temperature data to floating-point value
+	int16_t tempRaw = (data[1] << 8) | data[0];
+	float tempAmbient = tempRaw * 0.02 - 273.15;  // Assuming Celsius temperature scale
+
+	return tempAmbient;
+}
+
+#endif /* INC_GY_906_H_ */

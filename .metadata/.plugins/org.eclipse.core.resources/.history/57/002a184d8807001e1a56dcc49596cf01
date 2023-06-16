@@ -1,0 +1,38 @@
+#ifndef INC_SPEAKER_H_
+#define INC_SPEAKER_H_
+
+// PRIVATE INCLUDE ================================================================================
+
+// PRIVATE VARIABLE ===============================================================================
+
+uint8_t speaker_queue = 0;
+uint8_t speaker_data[8];
+
+// PRIVATE FUNCTION PROTOTYPE =====================================================================
+
+void speaker_logic();
+void speaker_play(uint8_t folder, uint8_t track);
+
+// USER CODE ======================================================================================
+
+void speaker_logic() {
+
+}
+
+void speaker_play(uint8_t folder, uint8_t track) {
+	if (speaker_queue) {
+		return;
+	}
+	speaker_data[0] = 0x7E;
+	speaker_data[1] = 0xFF;
+	speaker_data[2] = 0x06;
+	speaker_data[3] = 0x0F;
+	speaker_data[4] = 0x00;
+	speaker_data[5] = folder;
+	speaker_data[6] = track;
+	speaker_data[7] = 0xEF;
+
+	speaker_queue = 1;
+}
+
+#endif /* INC_SPEAKER_H_ */

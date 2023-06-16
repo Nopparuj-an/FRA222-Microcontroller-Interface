@@ -1,10 +1,33 @@
-19:59:10 **** Incremental Build of configuration Debug for project FRA262-G6 ****
+15:34:02 **** Incremental Build of configuration Debug for project FRA262-G6 ****
 make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/RGB.h:8,
+                 from ../Core/Src/main.c:40:
+../Core/Inc/MainLogic.h: In function 'main_logic':
+../Core/Inc/MainLogic.h:74:2: warning: implicit declaration of function 'RGB_logic' [-Wimplicit-function-declaration]
+   74 |  RGB_logic(state, tray_point_n, emergency);
+      |  ^~~~~~~~~
+In file included from ../Core/Src/main.c:40:
+../Core/Inc/RGB.h: At top level:
+../Core/Inc/RGB.h:12:6: warning: conflicting types for 'RGB_logic'
+   12 | void RGB_logic(MachineState state, uint8_t point, uint8_t emergency);
+      |      ^~~~~~~~~
+In file included from ../Core/Inc/RGB.h:8,
+                 from ../Core/Src/main.c:40:
+../Core/Inc/MainLogic.h:74:2: note: previous implicit declaration of 'RGB_logic' was here
+   74 |  RGB_logic(state, tray_point_n, emergency);
+      |  ^~~~~~~~~
+arm-none-eabi-gcc -o "FRA262-G6.elf" @"objects.list"  -l:libarm_cortexM4lf_math.a -mcpu=cortex-m4 -T"C:\ST\FRA222-Microcontroller-Interface\FRA262-G6\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FRA262-G6.map" -Wl,--gc-sections -static -L../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Lib/GCC --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FRA262-G6.elf
+ 
 arm-none-eabi-size   FRA262-G6.elf 
+arm-none-eabi-objdump -h -S  FRA262-G6.elf  > "FRA262-G6.list"
    text	   data	    bss	    dec	    hex	filename
-  74268	   1048	   8624	  83940	  147e4	FRA262-G6.elf
+  80276	   1048	   8720	  90044	  15fbc	FRA262-G6.elf
 Finished building: default.size.stdout
  
+Finished building: FRA262-G6.list
+ 
 
-19:59:12 Build Finished. 0 errors, 0 warnings. (took 1s.859ms)
+15:34:04 Build Finished. 0 errors, 2 warnings. (took 2s.345ms)
 

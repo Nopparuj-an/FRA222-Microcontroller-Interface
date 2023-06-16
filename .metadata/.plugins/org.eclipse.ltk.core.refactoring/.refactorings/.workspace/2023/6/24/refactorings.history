@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;F103 GY-906 I2C2&apos;" deleteContents="true" description="Delete resource &apos;F103 GY-906 I2C2&apos;" element1="/F103 GY-906 I2C2" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1686921133653"/>&#x0A;<refactoring comment="Rename resource &apos;LAB 5 UART&apos; to &apos;LAB5 UART&apos;" description="Rename resource &apos;LAB 5 UART&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/LAB 5 UART" name="LAB5 UART" stamp="1686921570120" updateReferences="true"/>
+</session>

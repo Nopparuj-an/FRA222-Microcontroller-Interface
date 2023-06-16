@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;F103 GY-906 I2C2/GY-906 I2C.ioc&apos; to &apos;F103 GY-906 I2C.ioc&apos;" description="Rename resource &apos;GY-906 I2C.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="GY-906 I2C.ioc" name="F103 GY-906 I2C.ioc" stamp="1686920971775" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;F103 GY-906 I2C2/F103 GY-906 I2C.ioc&apos; to &apos;F103 GY-906 I2C2.ioc&apos;" description="Rename resource &apos;F103 GY-906 I2C.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="F103 GY-906 I2C.ioc" name="F103 GY-906 I2C2.ioc" stamp="1686920997586" updateReferences="true"/>
+</session>
